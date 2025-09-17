@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+  <div class="weather-app">
+    <div class="left">
+      <h2 class="condition-icon"><i class="fa-solid fa-smog"></i> </h2>
+      <h2 class="condition"></h2>
+      <h3 class="city">Pasrur City</h3>
+      <div class="temperature"></div>
+      <p class="change"><i class="fa-solid fa-location-dot"></i> Change Location</p>
+      <h4 class="day">Thursday</h4>
+      <br><br><br><br><br><br>
+      <div class="forecast">
+        <div class="hour active">
+          <br><br><br><span>3PM</span>
+         <strong>28°C</strong>
+          <small>Feels like 30°C</small>
+        </div>
+        <div class="hour"><br><br><br><br><span>4PM</span><strong>28°C</strong></div>
+        <div class="hour"><br><br><br><br><span>5PM</span><strong>24°C</strong></div>
+        <div class="hour"><br><br><br><br><span>6PM</span><strong>17°C</strong></div>
+        <div class="hour"><br><br><br><br><span>7PM</span><strong>11°C</strong></div>
+        <div class="hour"><br><br><br><br><span>8PM</span><strong>11°C</strong></div>
+        <div class="hour"><br><br><br><br><span>9PM</span><strong>5°C</strong></div>
+        <div class="hour"><br><br><br><br><span>10PM</span><strong>1°C</strong></div>
+      </div>
+    </div>
+    <div class="right">
+      <p>💧 Humidity <br><strong>50%</strong></p>
+      <br>
+      <p>🌡 Air Pressure <br><strong>1009.4 PS</strong></p>
+      <br>
+      <p>🌧 Chance of Rain  <br><strong>0%</strong></p>
+      <br>
+      <p><i class="fa-solid fa-wind"></i> Wind Speed <br><strong>1.4 km/h</strong></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

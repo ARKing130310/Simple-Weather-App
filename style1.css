@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+
+  background: 
+    linear-gradient(to 
+    bottom,
+     rgba(0,0,0,0.6),
+     rgba(0,0,0,1)),
+    url("https://images.pexels.com/photos/20804946/pexels-photo-20804946.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.weather-app {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px;
+  height: 100%; 
+}
+
+.left {
+   flex: 1; 
+}
+
+.condition {
+  font-size: 30px;
+  font-weight: 400;
+}
+.condition-icon{
+  font-size: 70px;
+  font-weight: 400;
+}
+
+.city {
+  font-size: 20px;
+  margin-bottom: 15px;
+  opacity: 0.9;
+}
+
+.temperature {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.change {
+  font-size: 14px;
+  opacity: 0.7;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.day {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.forecast {
+  display: flex;
+  gap: 25px;
+  overflow-x: auto;
+}
+
+.hour {
+  /* background: rgba(0, 0, 0, 0.4); */
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  min-width: 150px;
+  min-height: 140px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hour strong {
+  display: block;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.hour small {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.hour:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-8px);          /* thoda upar uth jaye */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4); /* halka shadow */
+}
+
+.right {
+  flex: 1;
+  font-size: 14px;
+  text-align: left;
+  line-height: 1.5; 
+}
+.right strong {
+  font-size: 25px;
+}
+/* ================================
+   RESPONSIVE
+================================== */
+
+/* Tablets and below */
+@media (max-width: 768px) {
+  .weather-app {
+    flex-direction: column;      /* stack left and right */
+    align-items: center;
+    padding: 20px;
+  }
+
+  .left, .right {
+    width: 100%;
+    text-align: center;
+  }
+
+  .forecast {
+    justify-content: flex-start; /* left align forecast */
+  }
+
+  .hour strong {
+    font-size: 30px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .temperature {
+    font-size: 36px;
+  }
+
+  .day {
+    font-size: 16px;
+  }
+
+  .hour {
+    min-width: 120px;
+    min-height: 110px;
+    padding: 20px;
+  }
+
+  .hour strong {
+    font-size: 24px;
+  }
+
+  .right strong {
+    font-size: 20px;
+  }
+}
